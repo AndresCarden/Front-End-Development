@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div ng-app="" ng-init="person={numero1:2,numero2:5} ">
+        <p>
+            nombre: <input type="text" ng-model="name"></p>
+            <p>el nombre es:<span ng-bind="firstNames"></span></p>
+        <h2 ng-bind="name">Hola:</h2>
+        <h1>Hola:{{name}}</h1>
+        <h3>la suma es:{{2+2}}</h3>
+        NOMBRE:<input type="text" ng-model="firstName"><br>
+        APELLIDO:<input type="text" ng-model="lastName"><br>
+        <br>
+        NOMBRE Y APELLIDO:{{firstName+" "+lastName}}
+        <input style="background-color:{{myCol}}" ng-model="myCol">
+        <h3>OBJECTO:{{person.numero2}}</h3>
+
+        la multiplicacion:<span ng-bind="person.numero2"></span>
+    </div>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope){
+       $scope.firstName ="jonh";
+       $scope.lastName = "donenes" ;
+    });
+</script>
+  
+    
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFunction(){
+            document.getElementById('demoss').innerHTML = 'paragraph chandeg';
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>java script cambios de letras</h2>
+    <p id="demo">java scrip con html contenido</p>
+    <p id="de"></p>
+    <button type="button"
+    onclick='document.getElementById("demo").innerHTML = "HELLO JAVASCRIPT"'>presiona click</button>
+
+    <img id="myUamge" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width: 100px;">
+
+    <button onclick="document.getElementById('myUamge').
+    src='https://www.w3schools.com/js/pic_bulbon.gif'">ENCENDER</button>
+
+    
+
+    <button onclick="document.getElementById('myUamge')
+    .src='https://www.w3schools.com/js/pic_bulboff.gif'">APAGAR</button>
+    
+
+    <p id="demos">java cambio de estado con botones</p>
+    <button type="button" onclick="document.getElementById('demos').style.fontSize='35px'">CAMBIAR TAMAÑO</button>
+    <button type="button" onclick ="document.getElementById('demos').style.display='none'">OCULTAR</button>    
+    <button type="button" onclick ="document.getElementById('demos').style.display='block'">MOSTRAR</button>
+    <script>
+        document.getElementById('de').innerHTML = 'My Fierst java';
+    </script>
+
+    <p id="demoss">a paragrafp</p>
+    <button type="button" onclick ="myFunction()">Try it</button>
+
+
+    <p id="mate"></p>
+    <script>
+        document.getElementById('mate').innerHTML = 56+6;
+        document.write(5+6);
+        window.alert(5+6);
+        alert(2+6);
+        console.log(2+2);
+       
+    </script>
+     <button type="button" onclick ="document.write(5+6)">try it</button>
+     <button onclick="window.print()">print pagina</button>
+</body>
+</html>
